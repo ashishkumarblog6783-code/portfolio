@@ -1,0 +1,136 @@
+.certifications {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(29, 78, 216, 0.05) 100%);
+  position: relative;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.cert-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 30px 24px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.cert-card-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+  opacity: 0.08;
+  filter: blur(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cert-card:hover .cert-card-bg {
+  opacity: 0.16;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-color);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme='dark'] .cert-card:hover {
+  box-shadow: 0 16px 40px rgba(var(--accent-color), 0.15);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cert-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(29, 78, 216, 0.06);
+  border: 1px solid rgba(29, 78, 216, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-icon-wrapper {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.cert-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.cert-card:hover .cert-icon {
+  color: white;
+}
+
+.cert-link {
+  color: var(--text);
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-link:hover {
+  opacity: 1;
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.cert-body h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.cert-issuer {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+
+.cert-date {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.cert-body p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}
