@@ -23,7 +23,7 @@ const Experience = () => {
       specialization: 'Specialization in Data Science',
       school: 'Sai Vidya Institute of Technology, Bangalore',
       duration: '2023 – 2027',
-      cgpa: 'CGPA: 7.74/10',
+      cgpa: 'CGPA: 8/10',
       description: [
         'Focused on core concepts: Data Structures & Algorithms, Database Management Systems (DBMS), SQL, Python, Machine Learning, Data Analytics, and Azure Cloud services.',
         'Actively participated in project building, developing full-stack applications and analytics pipelines.'

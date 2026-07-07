@@ -16,12 +16,12 @@ const Hero = () => {
     },
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/ashish-kumar-yadav-ba36802b9',
+      href: 'https://www.linkedin.com/in/ashish-kumar-yadav-ba36802b9/',
       icon: FiLinkedin,
     },
     {
       label: 'Email',
-      href: 'mailto:ashishky0904@gmail.com',
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ashishky0904@gmail.com',
       icon: FiMail,
     },
   ];

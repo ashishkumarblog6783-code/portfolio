@@ -42,7 +42,7 @@ const About = () => {
         >
           <motion.div variants={itemVariants} className="about-text">
             <p>
-              I'm a detail-oriented Bachelor of Engineering (B.E.) Computer Science student specializing in Data Science at Sai Vidya Institute of Technology (CGPA: 7.74/10). I build robust data pipelines on Azure and create interactive dashboards in Power BI and Tableau.
+              I'm a detail-oriented Bachelor of Engineering (B.E.) Computer Science student specializing in Data Science at Sai Vidya Institute of Technology (CGPA: 8/10). I build robust data pipelines on Azure and create interactive dashboards in Power BI and Tableau.
             </p>
             <p>
               I'm highly proficient in SQL (CTEs, window functions, query optimization) and Python (Pandas, NumPy, Matplotlib, Seaborn) for conducting exploratory data analysis, data cleansing, and feature engineering.

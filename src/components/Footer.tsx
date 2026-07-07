@@ -7,8 +7,8 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: FiGithub, label: 'GitHub', url: 'https://github.com/ashishkumarblog6783-code' },
-    { icon: FiLinkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/ashish-kumar-yadav-ba36802b9' },
-    { icon: FiMail, label: 'Email', url: 'mailto:ashishky0904@gmail.com' },
+    { icon: FiLinkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/ashish-kumar-yadav-ba36802b9/' },
+    { icon: FiMail, label: 'Email', url: 'https://mail.google.com/mail/?view=cm&fs=1&to=ashishky0904@gmail.com' },
   ];
 
   return (
