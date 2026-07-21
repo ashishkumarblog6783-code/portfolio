@@ -98,6 +98,15 @@ const Projects = () => {
       live: '#',
       category: 'dev',
     },
+    {
+      id: 10,
+      title: 'Autonomous AI Job Application Cockpit',
+      description: 'Built a full-stack, AI-powered job discovery and autofill pipeline. It automatically scrapes 8+ job boards (LinkedIn, RemoteOK, Indeed, Naukri, ZipRecruiter), scores descriptions against my resume, and uses Playwright to seamlessly autofill job application forms while preserving manual review capabilities.',
+      tags: ['Node.js', 'Playwright', 'React', 'Web Scraping', 'AI Matching'],
+      github: 'https://github.com/ashishkumarblog6783-code/job-app-automator',
+      live: '#',
+      category: 'dev',
+    },
   ];
 
   const filteredProjects = filter === 'all' 
