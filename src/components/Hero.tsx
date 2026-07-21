@@ -161,7 +161,7 @@ const Hero = () => {
           >
             <div className="portrait-frame">
               <img
-                src={photoMissing ? "/avatar.png" : "/Designer.png"}
+                src={photoMissing ? "/avatar.png" : "/profile_new.jpg"}
                 alt="Ashish Kumar Yadav portrait"
                 onError={() => setPhotoMissing(true)}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
