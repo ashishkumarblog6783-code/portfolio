@@ -229,23 +229,30 @@ export async function smartAutofill(jobUrl, profile, resumePath, coverLetter) {
   let context = getActiveContext();
 
   if (!context) {
-    console.log(`[Autofill] No active browser window found. Launching persistent Chrome instance...`);
-    const launchOptions = {
-      channel: 'chrome',
-      headless: false,  // HEADFUL — user can see and review
-      slowMo: 100,      // Slightly slow down so user can follow along
-      viewport: null,   // Maximized window
-      args: ['--start-maximized'],
-      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
-    };
-
+    console.log(`[Autofill] Attempting to connect to your MAIN Chrome browser...`);
     try {
-      context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
-    } catch (e) {
-      console.warn('[Autofill] Chrome channel launch fallback to default chromium:', e.message);
-      delete launchOptions.channel;
-      launchOptions.viewport = { width: 1280, height: 900 };
-      context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
+      const browser = await chromium.connectOverCDP('http://localhost:9222');
+      context = browser.contexts()[0];
+      console.log(`[Autofill] Successfully connected to your MAIN Chrome browser!`);
+    } catch (cdpErr) {
+      console.log(`[Autofill] Main Chrome not available (requires --remote-debugging-port=9222). Launching local Automator profile...`);
+      const launchOptions = {
+        channel: 'chrome',
+        headless: false,
+        slowMo: 100,
+        viewport: null,
+        args: ['--start-maximized'],
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+      };
+
+      try {
+        context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
+      } catch (e) {
+        console.warn('[Autofill] Local profile locked. Falling back to temporary context.', e.message);
+        delete launchOptions.channel;
+        launchOptions.viewport = { width: 1280, height: 900 };
+        context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
+      }
     }
     activeContext = context;
   } else {
@@ -266,13 +273,18 @@ export async function smartAutofill(jobUrl, profile, resumePath, coverLetter) {
       args: ['--start-maximized'],
       userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
     };
-    try {
-      context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
-    } catch (e) {
-      delete launchOptions.channel;
-      launchOptions.viewport = { width: 1280, height: 900 };
-      context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
-    }
+      const browser = await chromium.connectOverCDP('http://localhost:9222').catch(() => null);
+      if (browser) {
+        context = browser.contexts()[0];
+      } else {
+        try {
+          context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
+        } catch (e) {
+          delete launchOptions.channel;
+          launchOptions.viewport = { width: 1280, height: 900 };
+          context = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
+        }
+      }
     activeContext = context;
     page = await context.newPage();
   }
