@@ -5,14 +5,38 @@ import '../styles/experience.css';
 const Experience = () => {
   const experiences = [
     {
+      role: 'Data Analytics Intern',
+      company: 'Thiranex',
+      duration: 'Aug 2026 – Sep 2026',
+      type: 'Internship',
+      technologies: ['Python', 'Power BI', 'Excel', 'scikit-learn', 'Predictive Modeling', 'Customer Segmentation'],
+      description: [
+        'Completed a 4-project data analytics internship covering dashboarding, customer segmentation, predictive modeling, and reporting automation using Python, Power BI, and Excel.',
+        'Built a revenue analysis dashboard and segmented customers by behavior/demographics using clustering (Python/scikit-learn, Power BI) to surface purchase patterns and data-driven insights.',
+        'Built regression and time-series forecasting models to predict trends, and automated data cleaning and reporting workflows to improve efficiency.'
+      ]
+    },
+    {
+      role: 'Data Analytics Intern',
+      company: 'IBM SkillsBuild — AICTE — BharatCares Internship',
+      duration: 'Jul 2026 – Aug 2026',
+      type: 'Remote',
+      technologies: ['Microsoft Excel', 'Tableau Public', 'Data Visualization', 'Business Analytics'],
+      description: [
+        'Cleaned, validated, and preprocessed 10,000+ retail transaction records using Microsoft Excel, engineering custom metrics like Shipping Days, Profit Margin (%), and Product Category.',
+        'Designed an interactive Tableau Public dashboard featuring KPI cards, scatter plots, and treemaps to analyze business trends, regional performance, and discount-profit tradeoffs.',
+        'Identified key business findings (Technology sector leading revenue, West region as top-performing region) and documented end-to-end analytics workflow on Tableau Public for stakeholder reporting.'
+      ]
+    },
+    {
       role: 'Web Development Intern',
       company: 'UpToSkill',
       duration: 'Nov 2025 – Jan 2026',
       type: 'Remote',
+      technologies: ['Flask', 'PostgreSQL', 'SQL', 'Git & GitHub'],
       description: [
-        'Built Flask web applications integrated with PostgreSQL for structured, secure data storage and retrieval.',
-        'Wrote and optimized SQL queries to fetch, insert, and update records efficiently.',
-        'Collaborated with a remote cross-functional team using Git and GitHub, ensuring timely delivery of clean code.'
+        'Built Flask applications with PostgreSQL for structured data storage and retrieval, writing SQL queries for efficient data management.',
+        'Collaborated with a distributed team using Git, delivering production-ready features within sprint deadlines.'
       ]
     }
   ];
@@ -25,7 +49,7 @@ const Experience = () => {
       duration: '2023 – 2027',
       cgpa: 'CGPA: 8/10',
       description: [
-        'Focused on core concepts: Data Structures & Algorithms, Database Management Systems (DBMS), SQL, Python, Machine Learning, Data Analytics, and Azure Cloud services.',
+        'Focused on core concepts: Data Structures & Algorithms, Database Management Systems (DBMS), SQL, Python, Machine Learning, Data Analytics, and Cloud services.',
         'Actively participated in project building, developing full-stack applications and analytics pipelines.'
       ]
     }
@@ -94,6 +118,13 @@ const Experience = () => {
                       <li key={i}>{desc}</li>
                     ))}
                   </ul>
+                  {exp.technologies && (
+                    <div className="card-tech-stack">
+                      {exp.technologies.map((tech, tIdx) => (
+                        <span key={tIdx} className="tech-badge">{tech}</span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -13,8 +13,8 @@
             font-family: 'EB Garamond', 'Times New Roman', Georgia, serif;
             color: #000;
             background: #e2e2e2;
-            line-height: 1.3;
-            font-size: 10.8pt;
+            line-height: 1.1;
+            font-size: 9pt;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
@@ -24,55 +24,55 @@
             height: 297mm;
             margin: 16px auto;
             background: #fff;
-            padding: 14mm 16mm 10mm;
+            padding: 4mm 12mm 3mm;
             box-shadow: 0 2px 16px rgba(0,0,0,0.15);
             overflow: hidden;
         }
 
         @media print {
             body { background: #fff; }
-            .resume { margin: 0; box-shadow: none; padding: 12mm 16mm 10mm; }
+            .resume { margin: 0; box-shadow: none; padding: 4mm 12mm 3mm; }
             .no-print { display: none !important; }
         }
 
         /* ── Header ── */
-        .header { text-align: center; margin-bottom: 5pt; }
+        .header { text-align: center; margin-bottom: 1pt; }
 
         .header h1 {
             font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-            font-size: 21pt;
+            font-size: 16pt;
             font-weight: 700;
             letter-spacing: 1.5px;
             color: #000;
-            margin-bottom: 4pt;
+            margin-bottom: 1pt;
         }
 
         .contact {
-            font-size: 9.8pt;
+            font-size: 9pt;
             color: #000;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         .contact a { color: #1d4ed8; text-decoration: underline; }
-        .sep { margin: 0 4px; }
+        .sep { margin: 0 3px; }
 
         /* ── Section ── */
-        .section { margin-bottom: 5pt; }
+        .section { margin-bottom: 1.5pt; }
 
         .section-title {
             font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-            font-size: 10.5pt;
+            font-size: 9.2pt;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             color: #000;
             border-bottom: 1px solid #000;
-            padding-bottom: 1pt;
-            margin-bottom: 3pt;
+            padding-bottom: 0;
+            margin-bottom: 1pt;
         }
 
         /* ── Entries ── */
-        .entry { margin-bottom: 5pt; }
+        .entry { margin-bottom: 1pt; }
         .entry:last-child { margin-bottom: 0; }
 
         .entry-row {
@@ -81,11 +81,11 @@
             align-items: baseline;
         }
 
-        .entry-title { font-weight: 700; font-size: 10.8pt; }
+        .entry-title { font-weight: 700; font-size: 9.2pt; }
 
         .entry-right {
             font-style: italic;
-            font-size: 10pt;
+            font-size: 8.5pt;
             white-space: nowrap;
         }
 
@@ -94,12 +94,12 @@
             justify-content: space-between;
             align-items: baseline;
             font-style: italic;
-            font-size: 10pt;
-            margin-bottom: 0.5pt;
+            font-size: 9.2pt;
+            margin-bottom: 0pt;
         }
 
         .entry-tech {
-            font-size: 9.8pt;
+            font-size: 9pt;
             font-style: italic;
             margin-bottom: 0.5pt;
         }
@@ -107,9 +107,9 @@
         .entry-tech a { color: #1d4ed8; text-decoration: underline; }
 
         .entry ul {
-            padding-left: 16pt;
-            font-size: 10.2pt;
-            line-height: 1.35;
+            padding-left: 12pt;
+            font-size: 9pt;
+            line-height: 1.2;
         }
 
         .entry li { margin-bottom: 0pt; }
@@ -117,19 +117,19 @@
         /* ── Skills ── */
         .skills-table {
             width: 100%;
-            font-size: 10.2pt;
+            font-size: 9.4pt;
             border-collapse: collapse;
         }
 
         .skills-table td {
-            padding: 0.5pt 0;
+            padding: 0.2pt 0;
             vertical-align: top;
         }
 
         .skills-table .cat {
             font-weight: 700;
-            width: 100pt;
-            padding-right: 6pt;
+            width: 90pt;
+            padding-right: 4pt;
         }
 
         /* ── Education ── */
@@ -139,15 +139,15 @@
             align-items: baseline;
         }
 
-        .edu-degree { font-weight: 700; font-size: 10.8pt; }
-        .edu-date { font-style: italic; font-size: 10pt; }
-        .edu-school { font-style: italic; font-size: 10pt; }
+        .edu-degree { font-weight: 700; font-size: 9.2pt; }
+        .edu-date { font-style: italic; font-size: 8.5pt; }
+        .edu-school { font-style: italic; font-size: 8.5pt; }
 
         /* ── Certifications ── */
         .cert-list {
-            padding-left: 16pt;
-            font-size: 10.2pt;
-            line-height: 1.35;
+            padding-left: 14pt;
+            font-size: 9.4pt;
+            line-height: 1.22;
         }
         .cert-list li { margin-bottom: 0pt; }
 
@@ -197,47 +197,29 @@
             <span class="sep">|</span>
             <a href="https://github.com/ashishkumarblog6783-code" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
+        <div style="font-weight: 700; font-size: 10.5pt; margin-top: 3pt; color: #111;">Data Analyst | SQL, Python, Power BI, AWS | Final-Year B.E. (Data Science)</div>
     </div>
 
     <!-- ════ SUMMARY ════ -->
     <div class="section">
         <div class="section-title">Summary</div>
-        <p style="font-size:10.2pt; line-height:1.4;">
-            Final-year B.E. Computer Science (Data Science) student who builds data pipelines on Azure and
-            Power BI dashboards. Strongest in SQL (CTEs, Window Functions, Star Schema) and Python for data
-            analysis. Interested in Data Analyst and Business Intelligence roles.
+        <p style="font-size:9.5pt; line-height:1.3;">
+            Aspiring Data Analyst / BI Analyst — final-year B.E. Computer Science (Data Science) student with hands-on experience in SQL, Python, Power BI, Tableau, and AWS data pipelines. Built dashboards, forecasting models, and ETL pipelines across 5+ real-world datasets.
         </p>
     </div>
 
     <!-- ════ SKILLS ════ -->
     <div class="section">
         <div class="section-title">Technical Skills</div>
-        <table class="skills-table">
-            <tr>
-                <td class="cat">Languages:</td>
-                <td>Python, SQL, C (Basics)</td>
-            </tr>
-            <tr>
-                <td class="cat">Libraries:</td>
-                <td>Pandas, NumPy, Matplotlib, Seaborn</td>
-            </tr>
-            <tr>
-                <td class="cat">Visualization:</td>
-                <td>Power BI, Tableau, Microsoft Excel</td>
-            </tr>
-            <tr>
-                <td class="cat">Databases:</td>
-                <td>PostgreSQL, MySQL</td>
-            </tr>
-            <tr>
-                <td class="cat">Cloud:</td>
-                <td>Azure Data Factory, Azure Data Lake, Azure Synapse Analytics</td>
-            </tr>
-            <tr>
-                <td class="cat">Tools:</td>
-                <td>Git, GitHub, Flask, Jupyter Notebook</td>
-            </tr>
-        </table>
+        <div style="font-size: 9.4pt; line-height: 1.3;">
+            <div><b>Languages:</b> Python, SQL, C (Basics)</div>
+            <div><b>Libraries:</b> Pandas, NumPy, Matplotlib, Seaborn</div>
+            <div><b>Visualization:</b> Power BI, Tableau, Microsoft Excel</div>
+            <div><b>Databases:</b> PostgreSQL, MySQL</div>
+            <div><b>Cloud:</b> AWS (S3, IAM, Glue, Athena, QuickSight)</div>
+            <div><b>Competencies:</b> Data Modeling, ETL Pipelines, Statistical Analysis, Machine Learning, NLP, A/B Testing</div>
+            <div><b>Tools:</b> Git, GitHub, Flask, FastAPI, Jupyter Notebook</div>
+        </div>
     </div>
 
     <!-- ════ EXPERIENCE ════ -->
@@ -245,15 +227,34 @@
         <div class="section-title">Experience</div>
         <div class="entry">
             <div class="entry-row">
+                <span class="entry-title">Data Analytics Intern | Thiranex</span>
+                <span class="entry-right">Aug 2026 – Sep 2026</span>
+            </div>
+            <ul>
+                <li>Completed a 4-project data analytics internship covering dashboarding, customer segmentation, predictive modeling, and reporting automation using Python, Power BI, and Excel</li>
+                <li>Built a revenue analysis dashboard and segmented customers by behavior/demographics using clustering (Python/scikit-learn, Power BI) to surface purchase patterns and data-driven insights</li>
+                <li>Built regression and time-series forecasting models to predict trends, and automated data cleaning and reporting workflows to improve efficiency</li>
+            </ul>
+        </div>
+        <div class="entry">
+            <div class="entry-row">
+                <span class="entry-title">Data Analytics Intern | IBM SkillsBuild — AICTE — BharatCares Internship</span>
+                <span class="entry-right">Jul 2026 – Aug 2026</span>
+            </div>
+            <ul>
+                <li>Cleaned, validated, and preprocessed 10,000+ retail transaction records using Microsoft Excel, engineering custom metrics like Shipping Days, Profit Margin (%), and Product Category</li>
+                <li>Designed an interactive Tableau Public dashboard featuring KPI cards, scatter plots, and treemaps to analyze business trends, regional performance, and discount-profit tradeoffs</li>
+                <li>Identified key business findings (Technology sector leading revenue, West region as top-performing region) and documented end-to-end analytics workflow on Tableau Public for stakeholder reporting</li>
+            </ul>
+        </div>
+        <div class="entry">
+            <div class="entry-row">
                 <span class="entry-title">Web Development Intern | UpToSkill</span>
                 <span class="entry-right">Nov 2025 – Jan 2026</span>
             </div>
-            <div class="entry-row-2">
-                <span>Remote</span>
-            </div>
             <ul>
                 <li>Built Flask applications with PostgreSQL for structured data storage and retrieval, writing SQL queries for efficient data management</li>
-                <li>Collaborated with a remote team using Git, delivering production-ready features within sprint deadlines</li>
+                <li>Collaborated with a distributed team using Git, delivering production-ready features within sprint deadlines</li>
             </ul>
         </div>
     </div>
@@ -261,7 +262,7 @@
     <!-- ════ PROJECTS ════ -->
     <div class="section">
         <div class="section-title">Projects</div>
-        
+
         <div class="entry">
             <div class="entry-row">
                 <span class="entry-title">Autonomous AI Job Application Cockpit</span>
@@ -282,22 +283,22 @@
             </div>
             <div class="entry-tech">Python, PostgreSQL, Pandas, Power BI, SQL | <a href="https://github.com/ashishkumarblog6783-code/customer_behavior-data-analyst-" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             <ul>
-                <li>Designed a Star Schema data model and wrote 10+ SQL queries using CTEs and Window Functions to analyze 3,900+ transactions</li>
-                <li>Built interactive Power BI dashboards to analyze revenue trends, customer segmentation, and subscription behavior</li>
-                <li>Found that Young Adults drove $62K in revenue and 73% were non-subscribers, informing targeted marketing strategy</li>
+                <li>Architected a Star Schema data model and wrote 10+ complex SQL queries using CTEs and Window Functions to analyze 3,900+ customer transactions</li>
+                <li>Built interactive Power BI dashboards to perform statistical analysis on revenue patterns, customer segmentation, and subscription behavior</li>
+                <li>Conducted in-depth data analysis to discover that Young Adults drove $62K in revenue and 73% were non-subscribers, directly informing data-driven business strategy</li>
             </ul>
         </div>
 
         <div class="entry">
             <div class="entry-row">
-                <span class="entry-title">End-to-End Azure Data Pipeline</span>
-                <span class="entry-right">2025</span>
+                <span class="entry-title">End-to-End AWS Data Pipeline</span>
+                <span class="entry-right">2026</span>
             </div>
-            <div class="entry-tech">Azure Data Factory, Data Lake, Synapse Analytics, Power BI, SQL | <a href="https://github.com/ashishkumarblog6783-code/Azure-end-to-end-project" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+            <div class="entry-tech">Amazon S3, AWS IAM, AWS Glue, Amazon Athena, Amazon QuickSight | <a href="https://github.com/ashishkumarblog6783-code/Azure-end-to-end-project" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             <ul>
-                <li>Built an end-to-end Azure data pipeline processing 30,000+ records from ingestion to dashboard visualization</li>
-                <li>Used Azure Data Factory and Synapse Analytics to perform SQL-based transformations and load data into reporting layers</li>
-                <li>Connected Power BI dashboards to Synapse Analytics for interactive reporting and performance metrics</li>
+                <li>Architected an end-to-end AWS data pipeline for incremental retail order data, provisioning IAM users, roles, and policies to secure access to S3 and Glue</li>
+                <li>Implemented AWS Glue Crawlers to auto-generate a Data Catalog with partitioned tables (by snapshot day) over S3 data for schema-on-read SQL querying without a managed database</li>
+                <li>Orchestrated partition-optimized SQL queries in Amazon Athena on S3 data, cutting data scanned per query, and developed bar/pie chart dashboards in Amazon QuickSight for stakeholder reporting</li>
             </ul>
         </div>
 
@@ -308,9 +309,9 @@
             </div>
             <div class="entry-tech">Python, Pandas, SQL, Power BI | <a href="https://github.com/ashishkumarblog6783-code/civic-connect" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             <ul>
-                <li>Analyzed 5,000+ civic complaint records using Python and SQL to find patterns in complaint categories and resolution times</li>
-                <li>Used text preprocessing (tokenization, TF-IDF) to extract key themes from unstructured complaint descriptions</li>
-                <li>Found that 3 complaint categories drove 60% of unresolved cases, creating Power BI dashboards for municipal teams</li>
+                <li>Analyzed 5,000+ civic complaint records using Python and SQL to discover actionable patterns in complaint categories and resolution times</li>
+                <li>Implemented Natural Language Processing (NLP) techniques including text tokenization and TF-IDF to extract key themes from unstructured text</li>
+                <li>Discovered that 3 core complaint categories drove 60% of unresolved cases, developing Power BI dashboards to optimize municipal operations</li>
             </ul>
         </div>
 
@@ -332,10 +333,8 @@
     <div class="section">
         <div class="section-title">Certifications</div>
         <ul class="cert-list">
-            <li><b>SQL (Advanced)</b> — HackerRank</li>
-            <li><b>Microsoft Power BI</b> — Microsoft Learn</li>
-            <li><b>Python for Data Science</b> — IBM SkillsBuild</li>
-            <li><b>Data Analytics Job Simulation</b> — Deloitte (via Forage)</li>
+            <li><b>SQL (Advanced)</b> — HackerRank | <b>Microsoft Power BI</b> — Microsoft Learn</li>
+            <li><b>Python for Data Science</b> — IBM SkillsBuild | <b>Data Analytics Job Simulation</b> — Deloitte (via Forage)</li>
         </ul>
     </div>
 
