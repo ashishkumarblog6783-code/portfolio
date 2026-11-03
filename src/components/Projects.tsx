@@ -27,7 +27,16 @@ const Projects = () => {
       category: 'data',
     },
     {
-      id: 2,
+      id: 21,
+      title: 'IKEA Gifting Customer Segmentation',
+      description: 'Analyzed IKEA retail transactions using SQL and Python to identify customer purchasing patterns and RFM-based segments. Delivered cleaned datasets, segmentation analysis, SQL queries, and dashboard-ready assets to support targeted gifting and retention strategies.',
+      tags: ['Python', 'Pandas', 'SQL', 'RFM Analysis', 'Customer Segmentation', 'Power BI'],
+      github: 'https://github.com/ashishkumarblog6783-code/IKEA-Gifting-Dataset',
+      live: '#',
+      category: 'data',
+    },
+    {
+      id: 3,
       title: 'End-to-End Azure Data Pipeline',
       description: 'Built an end-to-end Azure data pipeline processing 30,000+ records from ingestion to dashboard visualization. Used Azure Data Factory and Synapse Analytics to perform SQL-based transformations and load data into reporting layers, connecting Power BI dashboards to Synapse Analytics for interactive reporting and performance metrics.',
       tags: ['Azure Data Factory', 'Azure Data Lake', 'Azure Synapse', 'Power BI', 'SQL'],
@@ -36,7 +45,7 @@ const Projects = () => {
       category: 'data',
     },
     {
-      id: 3,
+      id: 4,
       title: 'AI-Powered Tender Evaluation Portal (CRPF)',
       description: 'Developed a FastAPI backend to extract and parse unstructured text from PDF tender documents using Gemini API. Implemented automated decision logic to compare bidder specifications against tender criteria, generating eligibility reports and an interactive React frontend showing evaluation summaries.',
       tags: ['FastAPI', 'React', 'Gemini API', 'PDF Parsing', 'Python'],
@@ -45,7 +54,7 @@ const Projects = () => {
       category: 'dev',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Civic Complaint Analysis System',
       description: 'Developed a web application (Civic Connect) that directly connects citizens to concerned government authorities for civic complaint lodging, tracking, and resolution. Designed a dashboard to analyze municipal case status and dispatch assignments.',
       tags: ['JavaScript', 'HTML/CSS', 'Node.js', 'Express', 'SQL'],
@@ -54,7 +63,7 @@ const Projects = () => {
       category: 'dev',
     },
     {
-      id: 5,
+      id: 6,
       title: 'CinePaper Dynamic Wallpaper App',
       description: 'Built a Windows desktop app (wallpaper engine) using Python and CustomTkinter that automatically queries TMDB API for trending movies/TV shows and dynamically updates the desktop background using native Windows APIs.',
       tags: ['Python', 'TMDB API', 'Windows API', 'GUI', 'CustomTkinter'],
@@ -63,7 +72,7 @@ const Projects = () => {
       category: 'dev',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Sales Performance Dashboard',
       description: 'Created an interactive Sales Performance Dashboard in Power BI with insights on trends, regional performance, and top products. Handled data prep using Pandas and designed clean KPI layouts.',
       tags: ['Power BI', 'Jupyter Notebook', 'Data Visualization', 'Pandas', 'Excel'],
@@ -72,7 +81,7 @@ const Projects = () => {
       category: 'data',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Netflix Movie & TV Show Analysis',
       description: 'Cleaned and transformed Netflix library dataset to uncover key insights about movie trends, content additions, and audience engagement, building an interactive dashboard for visual exploration.',
       tags: ['Jupyter Notebook', 'Pandas', 'Power BI', 'Data Cleansing', 'Matplotlib'],
@@ -81,7 +90,7 @@ const Projects = () => {
       category: 'data',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Banking Transaction Analytics',
       description: 'Developed a transaction analytics dashboard and workbook, analyzing transaction volumes, fraud detection cues, and account structures to deliver meaningful, actionable banking performance insights.',
       tags: ['Jupyter Notebook', 'Pandas', 'Matplotlib', 'Exploratory Data Analysis'],
