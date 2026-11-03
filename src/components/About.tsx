@@ -61,7 +61,7 @@ const About = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <span>9</span>
+                <span>21</span>
               </motion.div>
               <p>Key Projects Completed</p>
             </div>
