@@ -99,7 +99,7 @@ const Projects = () => {
       category: 'data',
     },
     {
-      id: 9,
+      id: 22,
       title: 'Human Resource Management System',
       description: 'Designed a database system and CLI management tool to handle employee onboarding, record updates, salary tracking, and attendance logging, using SQLite for structured data management.',
       tags: ['Jupyter Notebook', 'Python', 'SQLite', 'DBMS'],
